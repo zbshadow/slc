@@ -27,6 +27,7 @@ main {
     flex-direction: column;
     margin: auto;
     border: 1px solid #707070;
+    box-shadow: 0 20px 32px 0 rgba(0, 45, 243, 0.2), 0 23px 50px 0 rgba(255, 255, 255, 0.4);
 }
 
 #lLogin {
@@ -110,10 +111,6 @@ main {
     font-size: 1.2em;
 }
 
-#socialImgs {
-    
-}
-
 #socialImgs img{
     width: 64px;
     height: 64px;
@@ -121,4 +118,21 @@ main {
     background-color: none;
     border-radius: 10px;
     margin-top: -30px;
+}
+
+.hoverButton {
+    transition: 0.25s ease;
+}
+
+.hoverButton:hover {
+    transform: scale(1.1,1.1);
+}
+
+#oops {
+    transition: 0.25s ease;
+}
+
+#oops:hover {
+    text-decoration: underline;
+    cursor: default;
 }
