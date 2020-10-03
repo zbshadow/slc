@@ -14,11 +14,13 @@ main {
     align-items: center;
     height: 100%;
     background-color: grey;
-    background-image: url("\\imgs\\xkWsLGFb5BcHoERUDMtZ9b.jpg");
+    background: url("\\imgs\\xkWsLGFb5BcHoERUDMtZ9b.jpg") no-repeat center center fixed;
+    background-size: cover;
+
     color: white;
 }
 
-#loginMainDiv {
+#loginMainDiv, #regMainDiv {
     position: relative;
     height: 650px;
     width: 520px;
@@ -30,7 +32,7 @@ main {
     box-shadow: 0 20px 32px 0 rgba(0, 45, 243, 0.2), 0 23px 50px 0 rgba(255, 255, 255, 0.4);
 }
 
-#lLogin {
+#lLogin, #lRegister {
     width: 90%;
     height: 60%;
     margin: auto;
@@ -40,7 +42,7 @@ main {
     justify-content: space-evenly;
 }
 
-#lLogin h2 {
+#lLogin h2, #lRegister h2 {
     display: flex;
     justify-content: center;
 }
@@ -49,7 +51,7 @@ main {
     margin-top: 25px;
 }
 
-#lFields {
+.fields {
     display: flex;
     flex-direction: column;
     padding: 4px;
@@ -59,10 +61,25 @@ main {
     align-items: center;
 }
 
-#lFields input {
+#lFields {
+    height: 40%;
+}
+
+#rFields {
+    height: 60%;
+}
+
+.fields input {
     width: 90%;
-    height: 25%;
     margin-top: auto;
+}
+
+#lFields input {
+    height: 25%;
+}
+
+#rFields input {
+    height: 15%;
 }
 
 #passField {
@@ -85,13 +102,13 @@ main {
     font-size: small;
 }
 
-#lLoginButtons {
+#LoginButtons, #RegisterButtons {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-#lLoginButtons button {
+#LoginButtons button, #RegisterButtons button {
     height: 45px;
     width: 130px;
     margin: 0 35px;
@@ -156,4 +173,17 @@ main {
     justify-content: center;
     align-items: center;
     font-size: x-large;
+}
+
+#bMainDiv {
+    position: relative;
+}
+
+#backArrow img{
+    height: 30px;
+    width: 35px;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    padding: 2px;
 }
