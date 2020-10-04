@@ -7,42 +7,77 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <header>
+            <div id="navLogo">
+                <img src="imgs\WOWOTL_Logo_v10_edit.png" alt="#">
+            </div>
+            <div id="navBrand">
+                <h3>Shadowlands Collector</h3>
+            </div>
+            <div id="navDD" class="dropdown">
+                <button onclick="location.href = 'index.html';" class="dropbtn">Home</button>
+                <button onclick="location.href = 'broken.html';" class="dropbtn">News</button>
+                <button onclick="dropDownFunction()" class="dropbtn">Collections</button>
+                <div id="colDropdown" class="cd-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div id="positionNav"></div>
+            <div id="navUserButtons">
+                <button type="submit" class="hoverButton navUser" onclick="location.href = 'login.html';">Login</button>
+                <button class="hoverButton navUser" onclick="location.href = 'register.html';">Register</button>
+            </div>
+        </header>
         <main>
-            <div id="loginMainDiv">
-                <div id="lLogin">
-                    <div id="h2">
-                        <h2>Login To Track Your</h2>
-                        <h2>Collection</h2>
-                    </div>
-                    <div id="lFields" class="fields">
-                        <input type="text" placeholder="Username" name="uname" required>
-                        <div id="passField">
-                            <input type="password" placeholder="Password" name="pword" required>
-                            <a href="broken.html"><p id="oops">Forgot Password?</p></a>    
+            <div id="homeMain">
+                <div id="homeNews">
+                    <div id="news1" class="storyBox">
+                        <div class="storyBox-Title">
+                            <h3>Shadowlands Release Delayed</h3>
+                            <p>Oct. 1st, 2020</p>
+                        </div>
+                        <div class="storyBox-Content">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                nisi ut aliquip ex ea commodo consequat. Blah add more filler content, this is cool. Not long enough just yet. I 
+                                wish I could still watch silicon Valley. It was good."</p>
                         </div>
                     </div>
-                    <div id="LoginButtons">
-                        <div class="lrbuttons">
-                            <button type="submit" class="hoverButton" onclick="location.href = 'broken.html';">Login</button>
-                            <button class="hoverButton" onclick="location.href = 'register.html';">Register</button>
+                    <div id="news2" class="storyBox">
+                        <div class="storyBox-Title">
+                            <h3>Pre-Patch is coming!</h3>
+                            <p>Sept. 29th, 2020</p>
                         </div>
+                        <div class="storyBox-Content">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                nisi ut aliquip ex ea commodo consequat. Blah add more filler content, this is cool. Not long enough just yet. I 
+                                wish I could still watch silicon Valley. It was good."</p>
+                        </div>
+                    </div>
+                    <div id="news2" class="storyBox">
+                        <div class="storyBox-Title">
+                            <h3>zbshadow still has no Beta key!</h3>
+                            <p>Sept 26th, 2020</p>
+                        </div>
+                        <div class="storyBox-Content">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                nisi ut aliquip ex ea commodo consequat. Blah add more filler content, this is cool. Not long enough just yet. I 
+                                wish I could still watch silicon Valley. It was good."</p>
+                        </div>
+                    </div>
+                    <div id="moreNews">
+                        <button onclick="location.href = 'broken.html';">News</button>
                     </div>
                 </div>
-                <div id="lSocials">
-                    <p>Or Login with one of these Socials</p>
-                    <div id="socialImgs">
-                        <a href="broken.html">
-                            <img src="imgs\kisspng-logo-twitch-tv-video-games-transparency-design-olaroch-relax-this-is-just-my-song-5d41256822c0f5.3456804415645505041424.png" alt="#" class="hoverButton">
-                        </a>
-                        <a href="broken.html">
-                            <img src="imgs\Twitter_Social_Icon_Circle_Color.png" alt="#" class="hoverButton">
-                        </a>
-                        <a href="broken.html">
-                            <img src="imgs\kisspng-battle-net-world-of-warcraft-blizzard-entertainmen-5b0a2a859c84b4.9227634315273929016411.png"  class="hoverButton" alt="#">
-                        </a>
-                    </div>
+                <div id="homeCards">
+    
                 </div>
             </div>
         </main>
+        <script src="app.js"></script>
     </body>
 </html>
